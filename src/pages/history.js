@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/header"
+var dateFormat = require("dateformat")
 
 const GIT_NAME = "creyD"
 const GIT_REPO = "urban_website"
@@ -8,6 +9,10 @@ const GIT_URL =
 const GIT_COMMIT_URL =
   "https://github.com/" + GIT_NAME + "/" + GIT_REPO + "/commit/"
 
+// Format the date provided by the GitHub API
+function getDateFormatted(unformated_date) {
+  return dateFormat(unformated_date, "dd.mm.yyyy")
+}
 
 // Adds Git History to the site
 function addGitHistory(data) {
@@ -17,8 +22,8 @@ function addGitHistory(data) {
       var url = GIT_COMMIT_URL + data[push]["payload"]["commits"][commit].sha
       new_li.innerHTML =
         data[push]["payload"]["commits"][commit].author.name +
-        " committed " +
-        getDate(data[push].created_at) +
+        " committed on " +
+        getDateFormatted(data[push].created_at) +
         ": " +
         data[push]["payload"]["commits"][commit].message +
         " <a href=" +
