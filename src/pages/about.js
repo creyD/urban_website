@@ -1,7 +1,9 @@
 import React from "react"
+import Header from "../components/header"
+
 export default () => (
   <div>
-    <h1>About</h1>
+    <Header headline="About" />
     // TODO Impressum
   </div>
 )
