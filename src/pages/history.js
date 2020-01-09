@@ -1,6 +1,6 @@
 import React from "react"
+import dateFormat from "dateformat"
 import Header from "../components/header"
-var dateFormat = require("dateformat")
 
 const GIT_OWNER = "creyD"
 const GIT_REPO = "urban_website"
