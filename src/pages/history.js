@@ -2,12 +2,12 @@ import React from "react"
 import Header from "../components/header"
 var dateFormat = require("dateformat")
 
-const GIT_NAME = "creyD"
+const GIT_OWNER = "creyD"
 const GIT_REPO = "urban_website"
 const GIT_URL =
-  "https://api.github.com/repos/" + GIT_NAME + "/" + GIT_REPO + "/events"
+  "https://api.github.com/repos/" + GIT_OWNER + "/" + GIT_REPO + "/events"
 const GIT_COMMIT_URL =
-  "https://github.com/" + GIT_NAME + "/" + GIT_REPO + "/commit/"
+  "https://github.com/" + GIT_OWNER + "/" + GIT_REPO + "/commit/"
 
 // Format the date provided by the GitHub API
 function getDateFormatted(unformated_date) {
