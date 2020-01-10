@@ -29,20 +29,23 @@ function addGitHistory(data) {
         " <a href=" +
         url +
         " target='_blanc'>(Link)</a>"
-      document.getElementById("log").appendChild(new_li)
+      var log = document.getElementById("log")
+      log.appendChild(new_li)
     }
   }
 }
 
 // Send HTTP request to the GitHub API to get information about this repo
-const Http = new XMLHttpRequest()
-Http.open("GET", GIT_URL)
-Http.send()
+function getGitHubAPIData() {
+  const Http = new XMLHttpRequest()
+  Http.open("GET", GIT_URL)
+  Http.send()
 
-// If the API responds call the addGitHistory function
-Http.onreadystatechange = function() {
-  if (this.readyState === 4 && this.status === 200) {
-    addGitHistory(JSON.parse(Http.responseText))
+  // If the API responds call the addGitHistory function
+  Http.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) {
+      addGitHistory(JSON.parse(Http.responseText))
+    }
   }
 }
 
