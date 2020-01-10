@@ -1,9 +1,12 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
+  Urban Brothers site config
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Urban Brothers Website`,
+    siteURL: `https://urbanbrothers.de`,
+    description: `Homepage of the Urban Brothers`,
+  },
+  // pathPrefix: ``, // URL prefix of the whole site
 }

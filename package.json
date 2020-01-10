@@ -1,7 +1,7 @@
 {
   "name": "urban_website",
   "private": false,
-  "description": "Simple website of the Urban Brothers.",
+  "description": "Simple homepage of the Urban Brothers.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -20,7 +20,8 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "purgecss": "^1.4.2"
   },
   "repository": {
     "type": "git",
