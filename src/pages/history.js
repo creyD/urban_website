@@ -11,15 +11,15 @@ const GIT_COMMIT_URL =
 
 // Format the date provided by the GitHub API
 function getDateFormatted(unformated_date) {
-  return dateFormat(unformated_date, "dd.mm.yyyy");
+  return dateFormat(unformated_date, "dd.mm.yyyy")
 }
 
 // Adds Git History to the site
 function addGitHistory(data) {
   for (var push in data) {
     for (var commit in data[push]["payload"]["commits"]) {
-      var new_li = document.createElement("li");
-      var url = GIT_COMMIT_URL + data[push]["payload"]["commits"][commit].sha;
+      var new_li = document.createElement("li")
+      var url = GIT_COMMIT_URL + data[push]["payload"]["commits"][commit].sha
       new_li.innerHTML =
         data[push]["payload"]["commits"][commit].author.name +
         " committed on " +
