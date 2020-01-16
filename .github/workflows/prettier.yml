@@ -1,6 +1,6 @@
 name: Prettier for JS Code
 
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   cleanup_tasks:
