@@ -11,10 +11,6 @@ export default () => (
       discord
     </a>
     .
-    <a target="_blanc" href="https://steamcommunity.com/groups/urban_group">
-      steam
-    </a>
-    .
     <a target="_blanc" href="https://github.com/creyD/urban_website">
       github
     </a>
