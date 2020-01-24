@@ -7,7 +7,7 @@ export default () => (
       ts
     </a>
     .
-    <a target="_blanc" href="https://discord.gg/k6TnPq">
+    <a target="_blanc" href="https://discord.gg/aYcvtWE">
       discord
     </a>
     .
