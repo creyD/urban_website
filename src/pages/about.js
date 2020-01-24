@@ -20,6 +20,11 @@ export default () => (
         regulations.
       </p>
 
+      <h2>Legal</h2>
+      <p>
+        If you have any questions or queries regarding this website, please
+        write <a herf="mailto://webmaster@urbanbrothers.de">an email.</a>
+      </p>
       <a href="/">
         <button>Back to homepage</button>
       </a>
