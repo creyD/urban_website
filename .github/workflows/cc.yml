@@ -15,5 +15,6 @@ jobs:
         uses: creyD/prettier_action@master
         with:
           branch: ${{ github.head_ref }}
+          prettier_options: --write '**/*.js'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
