@@ -7,8 +7,8 @@ export default () => (
     <Header headline="About" />
     <div class="container">
       <p>
-        As this is a private website, it doesn't need an imprint. However let's
-        clarify a few things:
+        As this is a private website, so no legal notice is required. However
+        let's clarify a few things:
       </p>
 
       <h2>Cookies</h2>
