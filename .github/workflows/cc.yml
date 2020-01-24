@@ -1,0 +1,35 @@
+name: CodeCleanup
+
+on: [pull_request]
+
+jobs:
+  cleanup_tasks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloning the repository
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: Making Django Migrations
+        uses: creyD/makemigrations_action@master
+        with:
+          dependencypath: "requirements.txt"
+          branch: ${{ github.head_ref }}
+          managepath: "src/manage.py"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Applying PEP-8 to all files
+        uses: creyD/action_autopep8@master
+        with:
+          dependencies: "requirements.txt"
+          branch: ${{ github.head_ref }}
+          autoparameters: "--max-line-length 250 -a"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Prettify the JS Code
+        uses: creyD/prettier_action@master
+        with:
+          branch: ${{ github.head_ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
