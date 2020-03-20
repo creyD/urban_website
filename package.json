@@ -10,19 +10,18 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "dateformat": "^3.0.3",
     "gatsby": "^2.20.0",
-    "gatsby-plugin-manifest": "^2.2.38",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "gatsby-plugin-manifest": "^2.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
-    "purgecss": "^1.4.2"
+    "purgecss": "^2.1.0"
   },
   "repository": {
     "type": "git",
