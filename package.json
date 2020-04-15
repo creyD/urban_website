@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "dateformat": "^3.0.3",
-    "gatsby": "^2.20.0",
-    "gatsby-plugin-manifest": "^2.3.0",
+    "gatsby": "^2.20.3",
+    "gatsby-plugin-manifest": "^2.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
