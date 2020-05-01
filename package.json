@@ -10,14 +10,17 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "dateformat": "^3.0.3",
     "gatsby": "^2.20.0",
     "gatsby-plugin-manifest": "^2.3.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
@@ -29,5 +32,6 @@
   },
   "bugs": {
     "url": "https://github.com/creyD/urban_website/issues"
-  }
+  },
+  "snyk": true
 }
