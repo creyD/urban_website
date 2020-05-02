@@ -14,14 +14,14 @@
   },
   "dependencies": {
     "dateformat": "^3.0.3",
-    "gatsby": "^2.20.0",
-    "gatsby-plugin-manifest": "^2.3.0",
+    "gatsby": "^2.21.9",
+    "gatsby-plugin-manifest": "^2.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
-    "purgecss": "^2.1.0"
+    "purgecss": "^2.1.2"
   },
   "repository": {
     "type": "git",
