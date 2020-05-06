@@ -3,18 +3,17 @@ name: CodeCleanup
 on: [pull_request]
 
 jobs:
-  cleanup_tasks:
-    runs-on: ubuntu-latest
+    cleanup_tasks:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Cloning the repository
-        uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-      - name: Prettify the JS Code
-        uses: creyD/prettier_action@master
-        with:
-          branch: ${{ github.head_ref }}
-          prettier_options: '--write **/*.js'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        steps:
+            - name: Cloning the repository
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+            - name: Prettify the JS Code
+              uses: creyD/prettier_action@master
+              with:
+                  prettier_options: "--write **/*.js"
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
