@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "dateformat": "^3.0.3",
-    "gatsby": "^2.21.9",
+    "gatsby": "^2.21.11",
     "gatsby-plugin-manifest": "^2.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
