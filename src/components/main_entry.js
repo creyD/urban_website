@@ -1,8 +1,8 @@
 import React from "react"
 
-export default (props) => (
+export default props => (
     <div id={props.title}>
-        <h1>{props.title}</h1>
+        <h2>{props.title}</h2>
         <p>{props.text}</p>
     </div>
 )

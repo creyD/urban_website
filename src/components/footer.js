@@ -14,6 +14,10 @@ export default () => (
         <a target="_blanc" href="https://github.com/creyD/urban_website">
             github
         </a>
+        .
+        <a target="_blanc" href="https://paypal.me/pools/c/89fz0b2YFk">
+            donate
+        </a>
         .<Link to="/about/">about</Link>
     </div>
 )
