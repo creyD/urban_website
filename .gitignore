@@ -11,3 +11,6 @@ __pycache__/
 
 # Django Database
 db.sqlite3
+
+# Django Static Files
+.stat/

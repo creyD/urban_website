@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Title of the HTML page -->
+	<title>{% block title %}{% endblock %}</title>
+	<!-- Viewport for a pleasant mobile experience -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Charset for compatability and stability -->
+	<meta charset="utf-8">
+	<!-- Description for right SE indexing -->
+	<meta name="Description" content="Homepage of the Urban Brothers.">
+	<!-- SE indexing -->
+	<meta name="robots" content="noindex, nofollow" />
+	<!-- Icons for Materialize CSS -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <!-- Load the default master.css for some values -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/master.css' %}">
+	<!-- Add the favicon to the page -->
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'pic/urban.ico' %}">
+	<!-- Compiled and minified CSS for Materialize CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- JQuery for easier HTML manipulation -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Compiled and minified JavaScript for Materialize CSS -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- For custom header elements -->
+	{% block header %}{% endblock %}
+</head>
+
+<body>
+	<div class="container">
+		{% block content %}
+
+		{% endblock %}
+	</div>
+
+	{% block scripts_below %}{% endblock %}
+
+	{% if toast %}
+		<script type="text/javascript">M.toast({html: '{{ toast }}', classes: 'rounded'});</script>
+	{% endif %}
+</body>
+</html>
