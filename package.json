@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1",
-    "purgecss": "^2.1.2"
+    "purgecss": "^5.0.0"
   },
   "repository": {
     "type": "git",
