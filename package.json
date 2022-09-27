@@ -20,7 +20,7 @@
     "gatsby-plugin-manifest": "^2.4.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "snyk": "^1.347.1"
+    "snyk": "^1.1012.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
