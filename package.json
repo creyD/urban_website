@@ -17,7 +17,7 @@
   "dependencies": {
     "dateformat": "^3.0.3",
     "gatsby": "^4.23.1",
-    "gatsby-plugin-manifest": "^2.4.13",
+    "gatsby-plugin-manifest": "^4.23.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "snyk": "^1.1012.0"
